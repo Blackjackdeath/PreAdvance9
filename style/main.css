@@ -1,0 +1,218 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10vh;
+}
+
+table {
+  margin-top: 35px;
+}
+
+table, th, tr, td {
+  height: 50px;
+  text-align: center;
+  border-collapse: collapse;
+  border-bottom: 1px lightgray solid;
+  border-top: 1px lightgray solid;
+}
+
+td {
+  padding-top: 10px;
+}
+
+thead {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.box {
+  width: 50%;
+  height: 100%;
+  margin: 0 20px;
+}
+
+.boxLogin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.boxLogin__text {
+  margin-bottom: 20px;
+}
+
+.boxLogin__input {
+  height: 35px;
+  width: 90%;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.boxLogin__input:focus {
+  outline: none;
+  border: 2px aqua solid;
+  -webkit-box-shadow: 0px 0px 0px 3px #9beeee;
+          box-shadow: 0px 0px 0px 3px #9beeee;
+}
+
+.boxLogin__button, .boxLogin__edit {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  border: yellowgreen 2px solid;
+  color: yellowgreen;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.boxLogin__button:focus, .boxLogin__edit:focus {
+  -webkit-box-shadow: 0px 0px 0px 3px #7cf563;
+          box-shadow: 0px 0px 0px 3px #7cf563;
+}
+
+.boxLogin__edit {
+  visibility: hidden;
+  height: 0px;
+  margin-top: -6px;
+}
+
+.boxLogin__edit:focus {
+  -webkit-box-shadow: 0px 0px 0px 3px #7cf563;
+          box-shadow: 0px 0px 0px 3px #7cf563;
+}
+
+.boxError {
+  height: 20px;
+  width: 20vw;
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+  opacity: 0;
+}
+
+.boxError__text {
+  font-size: 15px;
+  margin: 3px 5px;
+}
+
+.box__dNumber {
+  width: 6vw;
+}
+
+.box__dLogin {
+  width: 7vw;
+}
+
+.box__dPassword {
+  width: 7vw;
+}
+
+.box__dEmail {
+  width: 8vw;
+}
+
+.box__dEdit {
+  width: 6vw;
+}
+
+.box__dDelete {
+  width: 6vw;
+}
+
+.active:hover {
+  background-color: green;
+  color: white;
+  border-color: green;
+}
+
+.editButton, .deleteButton {
+  width: 50px;
+  height: 30px;
+  background-color: yellow;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.editButton:hover, .deleteButton:hover {
+  -webkit-box-shadow: 0px 0px 0px 3px #dada70;
+          box-shadow: 0px 0px 0px 3px #dada70;
+}
+
+.deleteButton {
+  background-color: red;
+}
+
+.deleteButton:hover {
+  -webkit-box-shadow: 0px 0px 0px 3px #a94343;
+          box-shadow: 0px 0px 0px 3px #a94343;
+}
+/*# sourceMappingURL=main.css.map */

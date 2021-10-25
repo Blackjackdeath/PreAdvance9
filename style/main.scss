@@ -1,0 +1,127 @@
+@import 'base/base';
+.wrapper{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    padding-top: 10vh;
+}
+table {
+    margin-top: 35px;
+}
+table, th, tr, td{
+    height: 50px;
+    text-align: center;
+    border-collapse: collapse;
+    border-bottom: 1px lightgray solid;
+    border-top: 1px lightgray solid;
+}
+td{
+    padding-top: 10px;
+}
+thead{
+    font-size: 15px;
+    font-weight: bold;
+}
+.box{
+    width: 50%;
+    height: 100%;
+    margin: 0 20px;
+    &Login{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 20px;
+        font-weight: 400;
+        &__text{
+            margin-bottom: 20px;
+        }
+        &__input{
+            height: 35px;
+            width: 90%;
+            border-radius: 5px;
+            border-style: solid ;
+            &:focus{
+                outline: none;
+                border: 2px aqua solid;
+                box-shadow: 0px 0px 0px 3px rgb(155, 238, 238);
+            }
+        }
+        &__button{
+            width: 100px;
+            height: 50px;
+            background-color: white;
+            border: yellowgreen 2px solid;
+            color: yellowgreen;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: 400;
+            &:focus{
+                box-shadow: 0px 0px 0px 3px rgb(124, 245, 99);
+            }
+        }
+        &__edit{
+            @extend .boxLogin__button;
+            visibility: hidden;
+            height: 0px;
+            margin-top: -6px;
+            &:focus{
+                box-shadow: 0px 0px 0px 3px rgb(124, 245, 99);
+            }
+
+        }
+    }
+    &Error{
+        height: 20px;
+        width: 20vw;
+        background-color: red;
+        color: white;
+        border-radius: 8px;
+        opacity: 0;
+        &__text{
+            font-size: 15px;
+            margin: 3px 5px;
+        }
+    }
+    &__dNumber{
+       width: 6vw; 
+    }
+    &__dLogin{
+        width: 7vw;
+    }
+    &__dPassword{
+        width: 7vw;
+    }
+    &__dEmail{
+        width: 8vw;
+    }
+    &__dEdit{
+        width: 6vw;
+    }
+    &__dDelete{
+        width: 6vw;
+    }
+}
+.active:hover{
+    background-color: green;
+    color: white;
+    border-color: green;
+}
+.editButton{
+    width: 50px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    &:hover{
+        box-shadow:  0px 0px 0px 3px #dada70;
+    }
+}
+.deleteButton{
+    @extend .editButton;
+    background-color: red;
+    &:hover{
+        box-shadow:  0px 0px 0px 3px #a94343;
+    }
+}

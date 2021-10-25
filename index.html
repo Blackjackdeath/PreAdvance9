@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <form action="" name="formLogin" class="boxLogin">
+                <label for="login" class="boxLogin__text">Login</label>
+                <input type="text" name="" id="login" class="boxLogin__input" placeholder="Enter login">
+                <div class="boxError">
+                    <p class="boxError__text"></p>
+                </div>
+                <label for="password" class="boxLogin__text">Password</label>
+                <input type="password" name="" id="password" class="boxLogin__input" placeholder="Enter password">
+                <div class="boxError">
+                    <p class="boxError__text"></p>
+                </div>
+                <label for="email" class="boxLogin__text">Email adress</label>
+                <input type="text" name="" id="email" class="boxLogin__input" placeholder="Enter email">
+                <div class="boxError">
+                    <p class="boxError__text"></p>
+                </div>
+                <button type="button" class="boxLogin__button" disabled>Add user</button>
+                <button type="button" class="boxLogin__edit active">Edit user</button>
+            </form>
+        </div>
+        <div class="box">
+            <table class="box__Table">
+                <thead>
+                    <tr>
+                        <td class="box__dNumber">#</td>
+                        <td class="box__dLogin">Login</td>
+                        <td class="box__dPassword">Password</td>
+                        <td class="box__dEmail">Email</td>
+                        <td class="box__dEdit">Edit</td>
+                        <td class="box__dDelete">Delete</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
